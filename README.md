@@ -1,2 +1,3 @@
 # Student-Management-System
-Student Management System using by Java Swing and Mysql
+It help to manage student data using java swing and mysql.
+Work in progress
