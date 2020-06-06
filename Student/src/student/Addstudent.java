@@ -62,7 +62,7 @@ public class Addstudent extends javax.swing.JFrame {
         bl = new javax.swing.JLabel();
         gl = new javax.swing.JLabel();
         al = new javax.swing.JLabel();
-        date = new com.toedter.calendar.JDateChooser();
+        bdate = new com.toedter.calendar.JDateChooser();
 
         jLabel5.setText("Last Name");
 
@@ -180,10 +180,6 @@ public class Addstudent extends javax.swing.JFrame {
         addbtn.setLayout(addbtnLayout);
         addbtnLayout.setHorizontalGroup(
             addbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addbtnLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(208, 208, 208))
             .addGroup(addbtnLayout.createSequentialGroup()
                 .addGap(165, 165, 165)
                 .addGroup(addbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -198,18 +194,18 @@ public class Addstudent extends javax.swing.JFrame {
                                         .addGap(64, 64, 64)
                                         .addComponent(jLabel4))
                                     .addComponent(jLabel2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                                 .addGroup(addbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(lname, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
                                     .addComponent(fname, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addbtnLayout.createSequentialGroup()
-                                        .addComponent(female)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(male)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(gl, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(80, 80, 80))
-                                    .addComponent(date, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(bdate, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(addbtnLayout.createSequentialGroup()
+                                            .addComponent(female)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(male)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(gl, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addbtnLayout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addGroup(addbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -231,7 +227,7 @@ public class Addstudent extends javax.swing.JFrame {
                             .addGroup(addbtnLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(bl, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(118, Short.MAX_VALUE))
+                        .addContainerGap(106, Short.MAX_VALUE))
                     .addGroup(addbtnLayout.createSequentialGroup()
                         .addGroup(addbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel9)
@@ -243,13 +239,17 @@ public class Addstudent extends javax.swing.JFrame {
                                 .addGap(43, 43, 43)
                                 .addComponent(addbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addbtnLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(204, 204, 204))
         );
         addbtnLayout.setVerticalGroup(
             addbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(addbtnLayout.createSequentialGroup()
-                .addGap(65, 65, 65)
+                .addGap(59, 59, 59)
                 .addComponent(jLabel1)
-                .addGap(26, 26, 26)
+                .addGap(32, 32, 32)
                 .addGroup(addbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(fname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -265,7 +265,7 @@ public class Addstudent extends javax.swing.JFrame {
                     .addGroup(addbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel8)
                         .addComponent(bl))
-                    .addComponent(date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(bdate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(addbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -304,7 +304,10 @@ public class Addstudent extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(addbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(addbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -422,9 +425,9 @@ public class Addstudent extends javax.swing.JFrame {
     private javax.swing.JButton addbutton;
     private javax.swing.JTextArea address;
     private javax.swing.JLabel al;
+    private com.toedter.calendar.JDateChooser bdate;
     private javax.swing.JLabel bl;
     private java.awt.Canvas canvas1;
-    private com.toedter.calendar.JDateChooser date;
     private javax.swing.JRadioButton female;
     private javax.swing.JLabel fl;
     private javax.swing.JTextField fname;
